@@ -10,8 +10,6 @@ import cv2
 
 import multiprocessing
 from time import time
-import os
-import sys
 import getopt
 import traceback
 
@@ -213,8 +211,7 @@ if __name__ == '__main__':
 
             print('Full error traceback:\n')
             traceback.print_exc()
-            sys.exit(2)
-
+        
         print('\r--> Processing complete in %.1f seconds\n' % (time() - start))
 
         # with open('cache.json', 'w+') as f:
